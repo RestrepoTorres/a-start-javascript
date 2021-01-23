@@ -1,0 +1,26 @@
+body {
+    background-color: #c0c0c0;
+}
+
+h1{
+    text-align: center;
+    font-family: helvetica;
+}
+
+#explanation {
+    text-align: justify;
+    width : 55%;
+    float:right;
+    font-family: helvetica;
+    background-color : #839392;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px
+
+}
+
+#canvas {
+    width : 40%;
+    float:left;
+
+}

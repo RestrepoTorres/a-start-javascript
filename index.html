@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>A *</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/astar.js"></script>
 </head>
-<body onload = 'start();'>
-    <canvas id = "canvas" width="500" height="500" style="border:20px solid #000000;"></canvas>
+<body onload='start();'>
+<canvas id="canvas" width="500" height="500" style="border:2px solid #000000;"></canvas>
+
+<div id="explanation">
+    <h1>A *</h1>
+    <p> el A* (a estrella) es un algoritmo usado para hayar la ruta más corta entre dos puntos. Funciona
+        comparando la
+        posición actual e intentando tomar el camino que lo lleve lo más cerca posible al final, esto es llamado
+        heuristica, y es lo que distingue
+        al algoritmo A* de otros algoritmos de busqueda de caminos como el Dijkstra.<br> El laberinto a la izquierda
+        Tiene su inicio en la esquina superior izquierda y fu final en la esquina inferior derecha, las
+        celdas grises es por donde se puede transitar, las negras son muros. Mediante A* se intenta mostrar el mejor
+        camino para ir de un punto al otro. Las celdas rojas son celdas por donde ya se ha pasado y no dan a nuevas
+        celdas, las celdas azules es por donde ya se ha pasado y aun pueden dar a celdas sin explorar. En caso de hayar
+        el final se colorea de azul, de lo contrario se pintaran todas las celdas de rojo intentando agotar los
+        caminos posibles para avanzar.</p>
+</div>
 
 </body>
 </html>
